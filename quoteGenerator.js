@@ -4,9 +4,10 @@ $(document).ready(function() {
 }); 
 
 function newQuote () {
-  let quoteData = [];
-  let quoteText;
-  let quoteAuthor;
+  let quoteData = [],
+      quoteText,
+      quoteAuthor;
+  
   $.ajax({
     dataType: "json",
     url: "https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1",
@@ -26,10 +27,11 @@ function newQuote () {
   });
 }
 function tweet() {
-  let content = $(".quoteContent").text();
-  let author = $(".quoteAuthor").text();
-  let text = content + author;
-  let url = "https://twitter.com/intent/tweet?text=" + encodeURIComponent(text);
+  let content = $(".quoteContent").text(),
+      author = $(".quoteAuthor").text(),
+      text = content + author,
+      url = "https://twitter.com/intent/tweet?text=" + encodeURIComponent(text);
+  
   window.open(url);
   return false;
 }
