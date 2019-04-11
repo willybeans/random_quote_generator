@@ -1,10 +1,9 @@
-body {
-  margin-top: 60px;
-  background-color: #C8A2C8;
-}
-.well {
-  margin: 0em 1em 0em 1em;
-}
-.footer { 
-  margin-top: 10px;
-}
+body 
+  margin-top: 60px
+  background-color: #C8A2C8
+
+.well 
+  margin: 0em 1em 0em 1em
+
+.footer 
+  margin-top: 10px
